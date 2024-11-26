@@ -4,27 +4,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: lightblue;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .container {
-  background: rgb(154, 26, 26);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 50px;
+  background-color: antiquewhite;
   text-align: center;
   border-radius: 12px;
+  max-width: 50%;
+  height: 300px;
+  border: 2px solid rgb(0, 0, 0);
 
+}
+h1{
+  margin-bottom: 1.5em;
 }
 .mirrorEffect{
   transform: scaleX(-1); 
   display: inline-block; /
 }
-
+.content{
+  margin-bottom: 2.2em;
+}
 input{
     border: none;
 padding: 10px;
 font-size: 1.5rem;
 border-radius: 12px;
+margin-bottom: 14px;
 }
-#btnCheck{
+#testedWord{
+  background: lightblue;
+  text-align: center;
+
+}
+#testedWord:focus, #testedWord:hover{
+  cursor: pointer;
+  outline: black 2px solid;
+}
+.buttons{
+display: flex;
+justify-content: center;
+gap: 12px;
+}
+button{
   background: #000;
-  color: antiquewhite
+  color: antiquewhite;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  
+}
+button:hover{
+  cursor: pointer;
+  background: antiquewhite;
+  color:  #000;
+  outline: 2px solid black;
+}
+#resultMessage{
+  font-weight: 600;
+  font-size: 1.3em;
 }
